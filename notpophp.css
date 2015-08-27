@@ -1,0 +1,185 @@
+* {
+  font-family: "avenir", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+a:link {
+    text-decoration:none;
+	background-color: #0099FF;
+	color:#fcfd85;
+	
+}
+
+a:visited {
+    text-decoration:none;
+	background-color: #0099FF;
+	color:#fcfd85;
+}
+
+a:hover {
+    text-decoration:none;
+	background-color: #0099FF;
+	color:#42b6ff;
+}
+
+a:active {
+	text-decoration:none;
+	background-color: #0099FF;
+	color:#fcfd85;
+}
+
+
+/* iPhone */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+
+	body {
+		margin:0;
+		background-image: url('images/drops.png');
+	}
+	
+	video#bgvideo {
+		display:none;
+	}
+	
+	.overlay {
+		position:relative;
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index:0;
+		text-align:center;
+	}
+
+	.overlay img {
+		display:none;
+	}
+
+	.blurb h2 {
+		width:100%;
+		margin-top:40px;
+		font-size:30px;
+		color:white;
+		font-weight:bold;
+		text-align:center;
+	}
+
+	.blurb p {
+		width:90%;
+		margin: 15px 40px 0px 20px;	
+		font-size:17px;
+		color:white;
+		text-align:left;
+	}
+
+	#footer {
+		display:none;
+	}
+
+	#footer p {
+		font-family: "HelveticaNeue-Light" sans-serif;
+		font-size:10px;
+		color:white;
+		text-align:center;
+	}
+	
+	#footer a {
+		color:white;
+	}
+}
+
+/* iPad */
+
+@media only screen and (min-device-width : 641px) and (max-device-width : 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+	
+	body {
+		margin:0;
+		background-image: url('images/dropsland.png');
+	}
+	
+	video#bgvideo {
+		display:none;
+	}
+	
+	.overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index:0;
+		text-align:center;
+	}
+
+	.blurb h2 {
+		width:100%;
+		color:white;
+		font-weight:bold;
+		font-size:50px;
+	}
+
+	.blurb p {
+		width:90%;
+		margin: 10px 0px 0px 50px;	
+		font-size:20px;
+		color:white;
+		text-align:left;
+	}
+
+}
+
+
+
+/*Desktop*/
+@media only screen and (min-device-width: 1024px) {
+		
+
+	body {
+		margin:0;
+	}
+	
+	video#bgvideo {
+		position: fixed;
+		z-index:-1;
+	}
+	
+	.overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background-image: url('images/smalldots.png');
+		background-repeat: repeat;
+		z-index:0;
+	}
+
+	.blurb {
+		position: fixed;
+		top: 5%;
+		left: 20%;
+		width: 800px;
+	}
+
+	.blurb h2 {
+		font-weight:bold;
+		font-size:60px;
+		color:white;	
+	}
+	
+	.blurb p {
+		margin-top:16px;
+		margin-left:0px;		
+		font-size:25px;
+		font-weight:bold;
+		color:white;
+	}
+
+}
+
+
+
